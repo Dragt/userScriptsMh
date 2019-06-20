@@ -51,8 +51,8 @@ const ajouterRemplirChamps = () => {
           // TODO améliorer le sélecteur ?
           for (const tr of document.querySelectorAll('#stock tbody:last-of-type tr')) {
              const inputs = tr.querySelectorAll('input');
-             if (remplacer || (! inputs[1].value && ! inputs[0].value) ) {
-                 if (! (inputs[1].value === champNumero.value && inputs[0].value === champPrix.value)) {
+             if (remplacer || (! inputs[1].value && ! inputs[0].value) ) {                 // Si on force le remplacement ou si les deux champs prix et troll sont vides
+                 if (! (inputs[1].value === champNumero.value && inputs[0].value === champPrix.value)) {   // si les valeurs ne sont pas déjà les mêmes, tant qu'à faire
                      inputs[1].value = champNumero.value;
                      inputs[0].value = champPrix.value;
 		             inputs[0].dispatchEvent(new Event('change'));
