@@ -7,6 +7,8 @@
 // ==/UserScript==
 //
 
+// Ajoute un bouton dans les pages des évènements des monstres pour accéder directement au bestiaire pré-rempli (basé sur MZ)
+
 const URL_BESTIAIRE = "https://dragt.github.io/bestiaire/";
 
 // ------------------------------------- utilitaire ---------------------------------
